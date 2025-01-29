@@ -1,17 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biker Zone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biker Zone</title>
 
-    <!-- connected taildwind css link -->
-    <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- css file -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- connected taildwind css link -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- daisyUI connected -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
-    <header>
-        <h1>Biker Zone--byShifat</h1>
 
-    </header>
+<body>
+
+  <!-- header section -->
+  <header class="container mx-auto">
+    <!-- Navigation bar is here -->
+    <div class="navbar bg-base-100 py-3 lg:py-8">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-2xl lg:text-4xl">BIKEZ--byshifat</a>
+      </div>
+      <div class="flex-none hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-xl lg:text-2xl">
+          <li><a>Home</a></li>
+          <li><a>Shop</a></li>
+          <li><a>News</a></li>
+          <li>
+            <details>
+              <summary>Contact</summary>
+              <ul class="bg-base-100 rounded-t-none p-2">
+                <li><a>Email</a></li>
+                <li><a>FAX</a></li>
+              </ul>
+            </details>
+          </li>
+          <li><button class="btn btn-warning text-xl ml-2 lg:text-2xl">Login</button></li>
+
+        </ul>
+      </div>
+      <div class="dropdown dropdown-end lg:hidden">
+        <div tabindex="0" role="button" class="btn m-1"><i class='bx bx-menu text-2xl'></i></div>
+        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box shadow">
+          <li><a>Home</a></li>
+          <li><a>Shop</a></li>
+          <li><a>News</a></li>
+          <li><a>Contact</a></li>
+          <li><button class="btn btn-warning w-20">Login</button></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <!-- Banner section -->
+
+    <div class="carousel w-full  bg-amber-50 ">
+      <div id="slide1" class="carousel-item relative w-full">
+      <div class="flex  lg:flex-row lg:py-24 lg:px-56 lg:gap-64  flex-col py-16 px-20 ">
+          <div class="space-y-10 flex-1">
+            <h1 class="font-bold lg:text-7xl text-3xl ">Ride-on R15 V4 <br>
+               with Smile</h1>
+            <p class="text-lg lg:text-2xl spa lg:w-[35rem]"> minim mollit non deserunt ullamco
+              est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <button class="btn btn-error">Purchase</button>
+          </div>
+
+          <div class="flex-1">
+            <img src="images/slider/bike1.png" alt="" class="w-[40rem]">
+          </div>
+        </div>
+        <div class="absolute left-10 right-10 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide4" class="btn btn-circle">❮</a>
+          <a href="#slide2" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide2" class="carousel-item relative w-full">
+        <img src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp" class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide1" class="btn btn-circle">❮</a>
+          <a href="#slide3" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide3" class="carousel-item relative w-full">
+        <img src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp" class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide2" class="btn btn-circle">❮</a>
+          <a href="#slide4" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+      <div id="slide4" class="carousel-item relative w-full">
+        <img src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp" class="w-full" />
+        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+          <a href="#slide3" class="btn btn-circle">❮</a>
+          <a href="#slide1" class="btn btn-circle">❯</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- main section -->
+  <main>
+
+  </main>
+
+  <!-- footer section -->
+  <footer>
+
+  </footer>
 </body>
+
 </html>
